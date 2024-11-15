@@ -68,7 +68,7 @@ ul {
     height: 60px;
     background-color: #1ab394;
     color: #fff;
-    transition: width 1s;
+    transition: width 0.4s;
 }
 
 .knopki {
