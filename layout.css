@@ -9,7 +9,6 @@ h2 {
 
 h3 {
   margin: 0;
-  text-decoration: none;
   font-size: 14px;
   font-weight: 600;
 }
@@ -70,6 +69,16 @@ ul {
   padding: 0;
 }
 
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  background-color: #2F4050;
+  color: #a7b1c2;
+  transition: width 0.4s;
+}
+
 .siderHeader {
   text-decoration: none;
   text-align: center;
@@ -84,7 +93,7 @@ ul {
   transition: width 0.4s;
 }
 
-.knopki {
+.siderItem {
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -101,20 +110,10 @@ ul {
   font-weight: 600;
 }
 
-.knopki:hover {
+.siderItem:hover {
   background-color: #293846;
   color: #fff;
   border-left: 4px solid #1ab394;
-}
-
-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 220px;
-  background-color: #2F4050;
-  color: #a7b1c2;
-  transition: width 0.4s;
 }
 
 main {
@@ -213,6 +212,10 @@ ol li::before {
   margin-right: 10px;
   font-size: 16px;
   font-weight: 1000;
+}
+
+ol li:last-of-type {
+  border-bottom: 0;
 }
 
 .wrapper {
@@ -320,7 +323,7 @@ tr {
     width: 100%;
   }
 
-  .knopki {
+  .siderItem {
     width: 70px;
     white-space: nowrap;
     overflow: hidden;
