@@ -69,21 +69,42 @@
               <h3>Заполните форму в военcumат</h3>
             </div>
             <div class="boxContent">
-              <form action="/svo.html">
-                <label for="fname">Имя:</label><br>
-                <input type="text" id="fname" name="fname"><br>
+              <form class="form" action="/svo.html">
+                <label class="formLabel" for="fname">Имя</label>
+                <input class="formInput" type="text" id="fname" name="fname">
 
-                <label for="lname">Фамилия:</label><br>
-                <input type="text" id="lname" name="lname"><br>
+                <label class="formLabel" for="lname">Фамилия</label>
+                <input class="formInput" type="text" id="lname" name="lname">
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br><br>
+                <label class="formLabel" for="email">Email</label>
+                <input class="formInput" type="email" id="email" name="email">
 
-                <input type="checkbox" id="check" name="check" value="PRODAN">
-                <label for="check">Я согласен продать жопу</label><br><br>
+                <div class="formSelect">
+                  <label class="formLabel">
+                    Divisions
+                  </label>
+                  <button class="selectButton" type="button"><span>divisions</span> <i class="arrow"></i></button>
+                  <ul class="dropdown">
+                    <li>Alle</li>
+                    <li>OWL</li>
+                    <li>R</li>
+                    <li>W</li>
+                  </ul>
+                </div>
 
-                <input type="submit" value="Ок">
-                <input type="reset" value="Иди нахуй">
+                <label class="styledCheckbox" for="check">
+                  <input type="checkbox" id="check" name="check" value="PRODAN">
+                  <span>Я согласен продать жопу</span>
+                </label>
+
+                <div class="formButtons">
+                  <button class="styledButton text" type="reset">
+                    Иди нахуй
+                  </button>
+                  <button class="styledButton primary text" type="submit">
+                    Ок
+                  </button>
+                </div>
               </form>
             </div>
           </div>
@@ -115,7 +136,7 @@
                     <td>963</td>
                     <td>
                       <div class="buttonGroup">
-                        <button class="thumbButtons">
+                        <button class="styledButton primary">
                           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
                             height="16px" width="16px" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -123,7 +144,7 @@
                             </path>
                           </svg>
                         </button>
-                        <button class="thumbButtons">
+                        <button class="styledButton danger">
                           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
                             height="16px" width="16px" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -142,7 +163,7 @@
                     <td>475</td>
                     <td>
                       <div class="buttonGroup">
-                        <button class="thumbButtons">
+                        <button class="styledButton primary">
                           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
                             height="16px" width="16px" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -150,7 +171,7 @@
                             </path>
                           </svg>
                         </button>
-                        <button class="thumbButtons">
+                        <button class="styledButton danger">
                           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
                             height="16px" width="16px" xmlns="http://www.w3.org/2000/svg">
                             <path
